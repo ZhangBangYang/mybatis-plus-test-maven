@@ -4,10 +4,14 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
 @TableName("employee")  //指定对应的表名
+@NoArgsConstructor
 public class Employee {
 
     @TableId(type= IdType.AUTO) // 指定ID 以及自增长
@@ -29,5 +33,4 @@ public class Employee {
     private int admin;
 
     private Long deptId;
-
 }
