@@ -33,4 +33,7 @@ public class Employee {
     private int admin;
 
     private Long deptId;
+
+    @TableField(exist = false)
+    private Department dept;
 }
